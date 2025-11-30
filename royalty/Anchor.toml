@@ -1,0 +1,26 @@
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+royalties = "9d7TAi23mZtsXV4TRrMjmzHpVaBUxkzekhbc2q7YgJXF"
+
+[programs.devnet]
+royalties = "9d7TAi23mZtsXV4TRrMjmzHpVaBUxkzekhbc2q7YgJXF"
+
+[programs.mainnet]
+royalties = "9d7TAi23mZtsXV4TRrMjmzHpVaBUxkzekhbc2q7YgJXF"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "npx ts-mocha -p ./tsconfig.anchor.json -t 1000000 tests/**/*.ts"
+
+[test]
+startup_wait = 5000
+
